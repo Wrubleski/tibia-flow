@@ -10,6 +10,7 @@ const Home = () => {
         alt="Client Background Summer Update 2011"
       />
       <h1 className="home-header">Em breve</h1>
+      <p>teste CI heroku</p>
     </div>
   );
 };
