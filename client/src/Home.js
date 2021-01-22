@@ -31,7 +31,12 @@ const Home = () => {
       <div>
         <form onSubmit={handleSubmit}>
           <label htmlFor="loot">Loot</label>
-          <input type="text" name="loot" value={loot} onChange={handleInput} />
+          <textarea
+            type="text"
+            name="loot"
+            value={loot}
+            onChange={handleInput}
+          />
           <button>Submit</button>
         </form>
       </div>
