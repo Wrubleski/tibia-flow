@@ -14,7 +14,7 @@ const Home = () => {
     axios({
       method: "POST",
       url: "https://tibia-flow-server-production.herokuapp.com/api/loot",
-      data: { lootString: loot },
+      data: { submitedPtAnalyzer: loot },
     }).then((response) => {
       console.log(response);
     });
