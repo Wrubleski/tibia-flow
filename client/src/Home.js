@@ -13,8 +13,8 @@ const Home = () => {
     e.preventDefault();
     axios({
       method: "POST",
-      url: "https://tibia-flow-server-production.herokuapp.com/api/loot",
-      data: { submitedPtAnalyzer: loot },
+      url: "http://localhost:3001/api/loot",
+      data: { ptAnalyzer: loot },
     }).then((response) => {
       console.log(response);
     });
