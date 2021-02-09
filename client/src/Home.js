@@ -16,7 +16,7 @@ const Home = () => {
       url: "http://localhost:3001/api/loot",
       data: { ptAnalyzer: loot },
     }).then((response) => {
-      console.log(response);
+      console.log(response.data);
     });
   };
 
