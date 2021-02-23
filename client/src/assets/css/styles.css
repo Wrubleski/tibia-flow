@@ -1,15 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap");
 
 body {
-  margin: 0;
-}
-
-.home-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.home-header {
-  text-align: center;
-  font-family: MedievalSharp;
+  background: url("../img/ClientBackground_WinterUpdate2020.jpg") no-repeat top
+    center;
+  background-attachment: fixed;
 }
