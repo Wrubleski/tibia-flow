@@ -13,7 +13,7 @@ const Routes = () => {
       <Router>
         <Navbar />
         <Row className="justify-content-md-center">
-          <Col lg="2">
+          <Col lg="2" className="d-none d-lg-block">
             <Menu />
           </Col>
           <Col lg="9" className="mt-5">

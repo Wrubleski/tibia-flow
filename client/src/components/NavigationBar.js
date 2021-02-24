@@ -1,22 +1,32 @@
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+import Menu from "./Menu";
 import { LinkContainer } from "react-router-bootstrap";
 
 const NavigationBar = () => {
   return (
-    <Navbar bg="dark" variant="dark" className="mb-3">
+    // Warning: findDOMNode is deprecated in StrictMode.
+    // known issue:
+    // https://github.com/react-bootstrap/react-bootstrap/issues/3518
+
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <LinkContainer to="/">
         <Navbar.Brand>Tibia Flow</Navbar.Brand>
       </LinkContainer>
-      <Nav className="ml-auto">
-        <LinkContainer to="/login">
-          <Nav.Link>Login</Nav.Link>
-        </LinkContainer>
-
-        <LinkContainer to="/register">
-          <Nav.Link>Register</Nav.Link>
-        </LinkContainer>
-      </Nav>
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Collapse id="responsive-navbar-nav">
+        <Nav className="ml-auto">
+          <LinkContainer to="/login">
+            <Nav.Link>Login</Nav.Link>
+          </LinkContainer>
+          <LinkContainer to="/register">
+            <Nav.Link>Register</Nav.Link>
+          </LinkContainer>
+          <div className="d-lg-none">
+            <Menu />
+          </div>
+        </Nav>
+      </Navbar.Collapse>
     </Navbar>
   );
 };
