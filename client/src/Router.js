@@ -12,7 +12,7 @@ const Routes = () => {
     <>
       <Router>
         <Navbar />
-        <Row className="justify-content-md-center">
+        <Row className="justify-content-md-center ml-0 mr-0">
           <Col lg="2" className="d-none d-lg-block">
             <Menu />
           </Col>
